@@ -1,0 +1,27 @@
+body {
+    background-color: #282c34;
+}
+
+.typewriter-container {
+    font-family: monospace;
+    font-size: 24px;
+    color: #4CAF50;
+    white-space: nowrap;
+    overflow: hidden; /* Bu, metin yazılana kadar satırı gizler */
+    border-right: .15em solid orange; /* İmleç yerine kullanılabilir */
+    width: 0; /* Başlangıçta genişlik sıfır */
+    animation: 
+      typing 4s steps(40, end) forwards, /* 40 karakteri 4 saniyede yaz */
+      blink-caret .75s step-end infinite;
+}
+
+/* YENİ VE BASİT CSS YAZMA ANİMASYONU */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% } /* Metin yazıldıkça genişliği artır */
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+}
